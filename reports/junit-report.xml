@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="2.354" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-24T15:15:27.231Z">
+  <testcase classname="Automobile quote - vehicle data entry" name="Enter automobile vehicle data" time="2.347">
+    <system-out><![CDATA[Given I open the Vehicle Insurance application..............................passed
+When I select "Automobile"..................................................passed
+And I enter automobile vehicle data.........................................passed
+Then I should be on the Insurant Data step..................................passed]]></system-out>
+  </testcase>
+</testsuite>

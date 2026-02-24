@@ -1,0 +1,105 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "automobile-quote---vehicle-data-entry;enter-automobile-vehicle-data",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Enter automobile vehicle data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1011815100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the Vehicle Insurance application",
+            "match": {
+              "location": "features\\step_definitions\\automobile.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 515709199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I select \"Automobile\"",
+            "match": {
+              "location": "features\\step_definitions\\automobile.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 164285800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter automobile vehicle data",
+            "match": {
+              "location": "features\\step_definitions\\automobile.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254319599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be on the Insurant Data step",
+            "match": {
+              "location": "features\\step_definitions\\automobile.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21179900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 376996499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AUTOMOBILE",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@BS-48",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "automobile-quote---vehicle-data-entry",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Automobile quote - vehicle data entry",
+    "tags": [],
+    "uri": "features\\automobile.feature"
+  }
+]

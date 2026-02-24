@@ -1,0 +1,32 @@
+name: BDD Tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  bdd:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Cucumber tests
+        run: npm test
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: bdd-reports
+          path: reports/
