@@ -25,6 +25,16 @@ jobs:
       - name: Run Cucumber tests
         run: npm test
 
+      - name: Upload results to qTest Manager
+        if: always()
+        env:
+          QTEST_URL: ${{ secrets.QTEST_URL }}
+          QTEST_TOKEN: ${{ secrets.QTEST_TOKEN }}
+          QTEST_PROJECT_ID: ${{ secrets.QTEST_PROJECT_ID }}
+          QTEST_TEST_CYCLE: ${{ secrets.QTEST_TEST_CYCLE }}
+          JUNIT_PATH: reports/junit-report.xml
+        run: node scripts/qtest-upload-junit.js
+
       - name: Upload reports
         uses: actions/upload-artifact@v4
         with:
