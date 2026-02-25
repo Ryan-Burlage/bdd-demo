@@ -1,6 +1,6 @@
 ﻿Feature: Automobile quote - vehicle data entry
 
-  @AUTOMOBILE @smoke @BS-48
+  @BB-1 @AUTOMOBILE @smoke
   Scenario: Enter automobile vehicle data
     Given I open the Vehicle Insurance application
     When I select "Automobile"
